@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    database: "MYSQL"
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQLInnoDBDialect"
+        ddl-auto: "create-drop"
+  datasource:
+    url: "jdbc:mysql://localhost/rsmortgage"
+    platform: "mysql"
+    username: "root"
+    password: "root"
+    testWhileIdle: "true"
+    validationQuery: "SELECT 1"
+  database:
+    driverClassName: "com.mysql.jdbc.Driver"
+    
